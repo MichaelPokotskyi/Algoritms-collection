@@ -23,5 +23,8 @@
     <ClInclude Include="BinarySearch.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
+    <ClInclude Include="MergeSort.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

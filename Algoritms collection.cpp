@@ -1,10 +1,11 @@
 // Algoritms collection.cpp : 
 
-
+using namespace std;
 
 #include <iostream>
 #include "BinarySearch.h"
-using namespace std;
+#include "MergeSort.h"
+
 
 int main()
 {
