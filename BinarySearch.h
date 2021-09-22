@@ -8,9 +8,6 @@ the binary search algorithm. If target exists in the array,
 print the index of it.
 */
 
-
-
-
 int BinarySearchIteraive(int nums[], int length, int target) // O(1)
 {
 	int low{ 0 }, high = length - 1;
@@ -28,7 +25,6 @@ int BinarySearchIteraive(int nums[], int length, int target) // O(1)
 	}
 	return -1;
 }
-
 
 int BinarySearchRecursive(int nums[], int low, int high, int target) // O(log N)
 {
