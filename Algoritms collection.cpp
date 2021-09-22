@@ -18,6 +18,7 @@ int main()
 	the binary search algorithm. If target exists in the array,
 	print the index of it.
 	*/
+	/*
 	int nums[]{ 2, 5, 7, 9, 10, 14, 21, 32, 36, 41, 50 }; // given array 10 elements
 	int target_1{ 50 }; // target TRUE
 	int target_2{ 12 }; // target FALSE
@@ -30,7 +31,7 @@ int main()
 	cout << BinarySearchRecursive(nums, low, high, target_1);
 	//Iterative returns 0 or -1 if TRUE or FALSE, 
 	//recursive implementation returns index if found element and -1 if not.
-
+	*/
 
 	/*
 	* Given an integer array, sort it using the merge sort algorithm.

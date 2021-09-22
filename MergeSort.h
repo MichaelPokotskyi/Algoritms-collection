@@ -5,25 +5,6 @@ using namespace std;
 * Given an integer array, sort it using the merge sort algorithm.
 */
 
-void mergesort(int arr[], int aux[], int low, int high)
-{
-    // Base case
-    if (high == low) {        // if run size == 1
-        return;
-    }
-
-    // find midpoint
-    int mid = (low + ((high - low) >> 1));
-
-    // recursively split runs into two halves until run size == 1,
-    // then merge them and return up the call chain
-
-    mergesort(arr, aux, low, mid);          // split/merge left half
-    mergesort(arr, aux, mid + 1, high);     // split/merge right half
-
-    Merge(arr, aux, low, mid, high);        // merge the two half runs.
-}
-
 // Merge two sorted subarrays `arr[low … mid]` and `arr[mid+1 … high]`
 void Merge(int arr[], int aux[], int low, int mid, int high)
 {
@@ -54,15 +35,36 @@ void Merge(int arr[], int aux[], int low, int mid, int high)
     }
 }
 
+void mergesort(int arr[], int aux[], int low, int high)
+{
+    // Base case
+    if (high == low) {        // if run size == 1
+        return;
+    }
+
+    // find midpoint
+    //int mid = (low + ((high - low) >> 1));
+    int mid = (low + ((high - low) / 2));
+
+    // recursively split runs into two halves until run size == 1,
+    // then merge them and return up the call chain
+
+    mergesort(arr, aux, low, mid);          // split/merge left half
+    mergesort(arr, aux, mid + 1, high);     // split/merge right half
+
+    Merge(arr, aux, low, mid, high);        // merge the two half runs.
+}
+
 // Function to check if arr is sorted in ascending order or not
 int isSorted(int arr[])
 {
     int prev = arr[0];
-    for (int i = 1; i < N; i++)
+    int length = sizeof(arr) / sizeof(int);
+    for (int i = 1; i < length; i++)
     {
         if (prev > arr[i])
         {
-            printf("MergeSort Fails!!");
+            printf("MergeSort Fail");
             return 0;
         }
         prev = arr[i];
