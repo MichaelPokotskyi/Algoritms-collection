@@ -2,12 +2,14 @@
 
 using namespace std;
 
+#include <algorithm>
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include "BinarySearch.h"
 #include "MergeSort.h"
+#include "Quicksort.h"
 
 
 int main()
@@ -29,6 +31,7 @@ int main()
 	cout << BinarySearchIteraive(nums, length, target_1);
 	cout << "\n------------------------------------\n";
 	cout << BinarySearchRecursive(nums, low, high, target_1);
+	cout << endl;
 	//Iterative returns 0 or -1 if TRUE or FALSE, 
 	//recursive implementation returns index if found element and -1 if not.
 	*/
@@ -36,6 +39,7 @@ int main()
 	/*
 	* Given an integer array, sort it using the merge sort algorithm.
 	*/
+	/*
 	#define N 15
 	int arr[N], aux[N];
 	srand(time(NULL));
@@ -51,7 +55,37 @@ int main()
 	if (isSorted(arr))
 	{
 		for (int i = 0; i < N; i++) {
-			printf("%d ", arr[i]);
+			cout << arr[i];
 		}
 	}
+	*/
+
+	/*
+	Given an integer array, sort it using the QUicksort algorithm.
+	*/
+	#define N 10
+	srand(time(NULL));
+	int a[N];
+	int n = sizeof(a) / sizeof(int);
+	
+	for (int i = 0; i < N-1; i++) {
+		a[i] = (rand() % 100);
+	}
+
+	// print the UNsorted array
+	for (int i = 0; i < n; i++) {
+		cout << a[i] << " ";
+	}
+	cout << endl;
+
+	quicksort(a, 0, n - 1);
+
+	// print the sorted array
+	for (int i = 0; i < n; i++) {
+		cout << a[i] << " ";
+	}
+	cout << endl;
+
+	return 0;
+
 }

@@ -43,8 +43,8 @@ void mergesort(int arr[], int aux[], int low, int high)
     }
 
     // find midpoint
-    //int mid = (low + ((high - low) >> 1));
-    int mid = (low + ((high - low) / 2));
+    int mid = (low + ((high - low) >> 1));
+    //int mid = (low + ((high - low) / 2));
 
     // recursively split runs into two halves until run size == 1,
     // then merge them and return up the call chain
@@ -64,7 +64,7 @@ int isSorted(int arr[])
     {
         if (prev > arr[i])
         {
-            printf("MergeSort Fail");
+            cout << "MergeSort Fail";
             return 0;
         }
         prev = arr[i];

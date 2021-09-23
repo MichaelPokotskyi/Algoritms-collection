@@ -26,5 +26,8 @@
     <ClInclude Include="MergeSort.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
+    <ClInclude Include="Quicksort.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
