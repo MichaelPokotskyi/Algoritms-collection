@@ -29,5 +29,8 @@
     <ClInclude Include="Quicksort.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
+    <ClInclude Include="Euclid.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

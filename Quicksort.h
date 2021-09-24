@@ -19,6 +19,7 @@ int partition(int a[], int start, int end)
     // is incremented, and that element would be placed before the pivot.
     for (int i = start; i < end; i++)
     {
+        //{ -3, 9, 5, 2, 6, 8, -6, 1, 3 }
         if (a[i] <= pivot)
         {
             swap(a[i], a[pIndex]);
@@ -43,7 +44,7 @@ void quicksort(int a[], int start, int end)
 
     // rearrange elements across pivot
     int pivot = partition(a, start, end);
-
+    
     // recur on subarray containing elements that are less than the pivot
     quicksort(a, start, pivot - 1);
 

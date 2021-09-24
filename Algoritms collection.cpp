@@ -10,6 +10,7 @@ using namespace std;
 #include "BinarySearch.h"
 #include "MergeSort.h"
 #include "Quicksort.h"
+#include "Euclid.h"
 
 
 int main()
@@ -63,17 +64,18 @@ int main()
 	/*
 	Given an integer array, sort it using the QUicksort algorithm.
 	*/
-	#define N 10
-	srand(time(NULL));
-	int a[N];
+	//#define N 10
+	//srand(time(NULL));
+	//int a[N];
+	/*int a[] = { -3, 9, 5, 2, 6, 8, -6, 1, 3 };
 	int n = sizeof(a) / sizeof(int);
 	
-	for (int i = 0; i < N-1; i++) {
-		a[i] = (rand() % 100);
-	}
+	//for (int i = 0; i < n - 1; i++) {
+	//	a[i] = (rand() % 100);
+	//}
 
 	// print the UNsorted array
-	for (int i = 0; i < n; i++) {
+	for (int i = 0; i < n - 1; i++) {
 		cout << a[i] << " ";
 	}
 	cout << endl;
@@ -86,6 +88,16 @@ int main()
 	}
 	cout << endl;
 
-	return 0;
+	return 0;*/
+
+	/*
+	Euclid’s algorithm (or Euclidean algorithm) is a method for efficiently 
+	finding the greatest common divisor (GCD) of two numbers. 
+	The GCD of two integers, X and Y, is the largest number that divides 
+	both X and Y without leaving a remainder.
+	*/
+
+	cout << euclidIteration(20, 50);
+	cout << euclidRecursion(20, 50);
 
 }

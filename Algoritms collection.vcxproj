@@ -143,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinarySearch.h" />
+    <ClInclude Include="Euclid.h" />
     <ClInclude Include="MergeSort.h" />
     <ClInclude Include="Quicksort.h" />
   </ItemGroup>
