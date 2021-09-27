@@ -32,5 +32,8 @@
     <ClInclude Include="Euclid.h">
       <Filter>Resource Files</Filter>
     </ClInclude>
+    <ClInclude Include="InsertionSort.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

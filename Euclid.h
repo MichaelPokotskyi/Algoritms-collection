@@ -19,7 +19,7 @@ int euclidIteration(int a, int b)
         // `a` becomes `b` and `b` becomes `r` (`a % b`)
         a = b;
         b = r;
-    }
+    } cout << endl;
 
     return a;
 }

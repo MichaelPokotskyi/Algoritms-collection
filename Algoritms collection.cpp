@@ -7,10 +7,12 @@ using namespace std;
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 #include "BinarySearch.h"
 #include "MergeSort.h"
 #include "Quicksort.h"
 #include "Euclid.h"
+#include "InsertionSort.h"
 
 
 int main()
@@ -95,9 +97,15 @@ int main()
 	finding the greatest common divisor (GCD) of two numbers. 
 	The GCD of two integers, X and Y, is the largest number that divides 
 	both X and Y without leaving a remainder.
-	*/
 
-	cout << euclidIteration(20, 50);
-	cout << euclidRecursion(20, 50);
+	The Euclidean algorithm is based on the principle that the greatest common 
+	divisor of two numbers does not change if the larger number is replaced 
+	by its difference with the smaller number.
+
+	*/
+	//cout << euclidIteration(50, 20) << endl;
+	//cout << euclidRecursion(20, 50) << endl;
+
+
 
 }
