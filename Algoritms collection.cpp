@@ -107,5 +107,21 @@ int main()
 	//cout << euclidRecursion(20, 50) << endl;
 
 
+	/* 
+	Given an integer array sort it using the insertion algorithm 
+	*/
+	int arr[] = { 3, 8, 5, 4, 1, 9, -2 };
+	int n = sizeof(arr) / sizeof(arr[0]);
+
+	// start from the second element (the element at index 0
+	// is already sorted)
+	recursionInsertionSort(arr, 1, n - 1);
+	// print the sorted array
+	printArray(arr, n);
+
+	iterationInsertionSort(arr, n);
+	// print the sorted array
+	printArray(arr, n);
+
 
 }

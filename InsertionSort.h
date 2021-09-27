@@ -1,6 +1,9 @@
 #pragma once
 using namespace std;
 
+/*
+Given an integer array sort it using the insertion algorithm
+*/
 
 // Function to perform insertion sort on `arr[]`
 void iterationInsertionSort(int arr[], int n)
