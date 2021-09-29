@@ -13,6 +13,7 @@ using namespace std;
 #include "Quicksort.h"
 #include "Euclid.h"
 #include "InsertionSort.h"
+#include "SelectionSort.h"
 
 
 int main()
@@ -123,5 +124,12 @@ int main()
 	// print the sorted array
 	printArray(arr, n);
 
+	/*
+	Given an integer array sort it using the selection sort algorithm
+	*/
+	int arr[] = { 3, 5, 8, 4, 1, 9, -2 };
+	int n = sizeof(arr) / sizeof(arr[0]);
 
+	selectionSort(arr, n);
+	printArray(arr, n);
 }
