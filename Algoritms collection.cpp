@@ -14,6 +14,7 @@ using namespace std;
 #include "Euclid.h"
 #include "InsertionSort.h"
 #include "SelectionSort.h"
+#include "CountingSort.h"
 
 
 int main()
@@ -111,6 +112,7 @@ int main()
 	/* 
 	Given an integer array sort it using the insertion algorithm 
 	*/
+	/*
 	int arr[] = { 3, 8, 5, 4, 1, 9, -2 };
 	int n = sizeof(arr) / sizeof(arr[0]);
 
@@ -123,13 +125,32 @@ int main()
 	iterationInsertionSort(arr, n);
 	// print the sorted array
 	printArray(arr, n);
+	*/
 
 	/*
 	Given an integer array sort it using the selection sort algorithm
 	*/
+	/*
 	int arr[] = { 3, 5, 8, 4, 1, 9, -2 };
 	int n = sizeof(arr) / sizeof(arr[0]);
 
 	selectionSort(arr, n);
 	printArray(arr, n);
+	*/
+	
+	/*
+	Given a collection of N items, 
+	each of which has a non-negative integer key whose maximum value is at most k, 
+	effectivley sort it using the counting sort algorithm.
+	*/
+
+	int arr[] = { 4, 2, 10, 10, 1, 4, 2, 1, 10 };
+	int n = sizeof(arr) / sizeof(arr[0]);
+	// range of array elements
+	int k = 10;
+	countsort(arr, n, k);
+	for (int i = 0; i < n; i++) {
+		cout << arr[i];
+	}
+
 }
